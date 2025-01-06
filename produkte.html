@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte - Dream-World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header mit Bild -->
+    <header>
+        <img src="images/header-image.jpg" alt="Dream-World" class="header-img">
+        <h1>Produkte</h1>
+    </header>
+
+    <!-- Navigationsleiste -->
+    <div class="navbar">
+        <a href="#">Bestellungen verwalten</a>
+        <a href="#">Lager</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="#">Buchhaltung</a>
+        <a href="#">Einstellungen</a>
+    </div>
+
+    <!-- Produktübersicht -->
+    <div class="product-container">
+        <h2>Unsere Produkte</h2>
+        
+        <!-- Filterbereich (optional) -->
+        <div class="filters">
+            <label for="category">Kategorie:</label>
+            <select id="category">
+                <option value="all">Alle</option>
+                <option value="books">Bücher</option>
+                <option value="gadgets">Gadgets</option>
+                <option value="accessories">Zubehör</option>
+            </select>
+        </div>
+
+        <!-- Produktliste -->
+        <div class="products">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Produkt 1">
+                <h3>Produktname 1</h3>
+                <p>Kurze Beschreibung des Produkts.</p>
+                <p class="price">€19.99</p>
+                <button>In den Warenkorb</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Produkt 2">
+                <h3>Produktname 2</h3>
+                <p>Kurze Beschreibung des Produkts.</p>
+                <p class="price">€29.99</p>
+                <button>In den Warenkorb</button>
+            </div>
+            <!-- Weitere Produkte hier -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dream-World. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

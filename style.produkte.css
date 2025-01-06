@@ -41,7 +41,7 @@ body {
 
 .header .logo img {
     width: 250px; /* Legt die Breite des Logos fest */
-    max-width: 6000px; /* Maximale Breite des Logos */
+    max-width: 300px; /* Maximale Breite des Logos */
     height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
 }
 

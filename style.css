@@ -19,8 +19,8 @@ header {
 
 .header-img {
   width: 100%;
-  height: 300px; /* Du kannst die Höhe nach Bedarf anpassen */
-  object-fit: cover; /* Sorgt dafür, dass das Bild den Bereich vollständig ausfüllt */
+  height: 300px;
+  object-fit: cover;
 }
 
 /* Header-Titel */
@@ -32,7 +32,7 @@ header h1 {
   color: white;
   font-size: 36px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Textschatten für bessere Lesbarkeit */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Navigationsleiste */
@@ -56,6 +56,90 @@ header h1 {
 .navbar a:hover {
   background-color: #4CAF50;
   transform: scale(1.05);
+}
+
+/* Produktübersicht */
+.product-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  font-size: 18px;
+}
+
+.filters select {
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Produktkarten */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.product-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #45a049;
 }
 
 /* Footer */

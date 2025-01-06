@@ -59,10 +59,18 @@ body {
    Styles für Dashboard
 =========================== */
 
+/* Körper und HTML-Tag sicherstellen, dass sie die volle Breite und Höhe einnehmen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 /* Container für das gesamte Dashboard Layout */
 .container {
     display: flex; /* Flexbox Layout verwenden */
-    height: 100vh; /* Die gesamte Höhe des Viewports */
+    height: 100%; /* Die gesamte Höhe des Viewports */
+    width: 100%; /* Die gesamte Breite des Viewports */
 }
 
 /* Sidebar Styling */
@@ -76,6 +84,7 @@ body {
     left: 0;
     bottom: 0; /* Sidebar soll die gesamte Höhe einnehmen */
     z-index: 1000; /* Damit die Sidebar immer oben bleibt */
+    height: 100vh; /* Sidebar auf volle Höhe setzen */
 }
 
 /* Logo in der Sidebar */

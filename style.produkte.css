@@ -33,15 +33,15 @@ body {
 
 /* Header Styling */
 .header {
-    background-color: #4CAF50; /* Grün als Beispiel */
+    background-color: white; /* Grün als Beispiel */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 .header .logo img {
-    width: 250px; /* Legt die Breite des Logos fest */
-    max-width: 250px; /* Maximale Breite des Logos */
+    width: 450px; /* Legt die Breite des Logos fest */
+    max-width: 6000px; /* Maximale Breite des Logos */
     height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
 }
 

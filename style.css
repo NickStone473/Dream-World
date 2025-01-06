@@ -77,7 +77,7 @@ html, body {
 .sidebar {
     width: 250px; /* Breite der Sidebar */
     background-color: #f0f0f0; /* Neue Hintergrundfarbe für die Sidebar */
-    color: black !important;
+    color: black !important; /* Setzt die Textfarbe auf Schwarz */
     padding: 20px;
     position: fixed; /* Sidebar bleibt immer am linken Rand */
     top: 0;
@@ -85,6 +85,17 @@ html, body {
     bottom: 0; /* Sidebar soll die gesamte Höhe einnehmen */
     z-index: 1000; /* Damit die Sidebar immer oben bleibt */
     height: 100vh; /* Sidebar auf volle Höhe setzen */
+}
+
+/* Menüpunkt Textfarbe in der Sidebar */
+.sidebar a {
+    color: black !important; /* Setzt die Textfarbe der Menüpunkte auf schwarz */
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+}
+
+/* Hover-Effekt für Links in der Sidebar */
+.sidebar a:hover {
+    color: #333 !important; /* Ein dunklerer Farbton für den Hover-Effekt */
 }
 
 /* Logo in der Sidebar */

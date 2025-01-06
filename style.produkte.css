@@ -33,7 +33,7 @@ body {
 
 /* Header Styling */
 .header {
-    background-color: #f0f0f0; /* Grün als Beispiel */
+    background-color: #f0f0f0;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -45,24 +45,6 @@ body {
     height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
 }
 
-/* --- PRODUKTSEITE: FILTER-STYLING --- */
-.filter {
-    margin: 20px auto;
-    text-align: center;
-}
-
-.filter label {
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.filter select {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-}
 
 /* --- PRODUKTSEITE: GRID-STYLING --- */
 .product-grid {

@@ -39,7 +39,7 @@ document.getElementById("add-product-form").addEventListener("submit", function(
 });
 
     // Anfrage an das Google Apps Script senden
-    fetch("DEINE_WEB_APP_URL", {
+    fetch("https://script.google.com/macros/s/AKfycbzxZ7PZkl2Qb95cELKCmhs1Jt132_dp8jaKDpLliE4X2WW-kR2oZ2U38ftVX08wMiuOCw/exec", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

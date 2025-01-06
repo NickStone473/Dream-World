@@ -1,0 +1,46 @@
+/* Grundlegendes Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container für die Ladeanzeige */
+.loader-container {
+    text-align: center;
+}
+
+/* Styling für das Logo */
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Styling für den Lade-Text */
+.loading-text {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Styling für den Ladebalken */
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    margin: 20px auto;
+    height: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+}

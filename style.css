@@ -175,6 +175,24 @@ header h1 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     color: #555;
 }
+/* ===========================
+	Footer-Styling 
+=========================== */
+.footer {
+    background-color: #f1f1f1; /* Heller Hintergrund für den Footer */
+    color: black; /* Textfarbe im Footer */
+    text-align: center; /* Text zentrieren */
+    padding: 20px 0; /* Etwas Abstand oben und unten */
+    position: fixed; /* Footer bleibt immer am unteren Rand */
+    width: 100%; /* Footer geht über die gesamte Breite */
+    bottom: 0; /* Am unteren Rand fixieren */
+}
+
+/* Optional: Footer Text anpassen */
+.footer p {
+    margin: 0; /* Entfernt Standard-Margen */
+    font-size: 14px; /* Kleinere Schriftgröße für den Footer */
+}
 
 /* ===========================
    Weitere Styles

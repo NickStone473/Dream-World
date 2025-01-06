@@ -40,9 +40,9 @@ body {
 }
 
 .header .logo img {
-    max-width: 500px;
-    display: block;
-    margin: 0 auto 10px;
+    width: 250px; /* Legt die Breite des Logos fest */
+    max-width: 250px; /* Maximale Breite des Logos */
+    height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
 }
 
 /* --- PRODUKTSEITE: FILTER-STYLING --- */

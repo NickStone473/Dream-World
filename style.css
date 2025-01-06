@@ -87,6 +87,11 @@ html, body {
     height: 100vh; /* Sidebar auf volle Höhe setzen */
 }
 
+/* Menüpunkt Textfarbe in der Sidebar */
+.sidebar a {
+    color: black !important; /* Setzt die Textfarbe der Menüpunkte auf schwarz */
+}
+
 /* Logo in der Sidebar */
 .sidebar .logo img {
     width: 100%;

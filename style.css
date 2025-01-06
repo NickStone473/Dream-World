@@ -76,7 +76,7 @@ html, body {
 /* Sidebar Styling */
 .sidebar {
     width: 250px; /* Breite der Sidebar */
-    background-color: #4CAF50; /* Neue Hintergrundfarbe für die Sidebar */
+    background-color: #f0f0f0; /* Neue Hintergrundfarbe für die Sidebar */
     color: white;
     padding: 20px;
     position: fixed; /* Sidebar bleibt immer am linken Rand */

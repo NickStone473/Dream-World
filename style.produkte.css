@@ -33,14 +33,14 @@ body {
 
 /* Header Styling */
 .header {
-    background-color: white; /* Grün als Beispiel */
+    background-color: #f8f8f8; /* Grün als Beispiel */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 .header .logo img {
-    width: 450px; /* Legt die Breite des Logos fest */
+    width: 500px; /* Legt die Breite des Logos fest */
     max-width: 6000px; /* Maximale Breite des Logos */
     height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
 }

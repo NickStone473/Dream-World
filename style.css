@@ -14,47 +14,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
 }
-
-/* ===========================
-   Styles für index.html (Startseite)
-=========================== */
-
-.loader-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.logo img {
-    width: 300px; /* Größe des Logos */
-    height: auto;
-}
-
-.loading-text {
-    font-size: 24px;
-    margin-top: 20px;
-    color: #333;
-}
-
-.progress-container {
-    width: 80%;
-    background-color: #ddd;
-    margin: 20px auto;
-    height: 25px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.progress-bar {
-    width: 0%;
-    height: 100%;
-    background-color: #4caf50;
-    border-radius: 10px;
-}
-
 /* ===========================
    Styles für Dashboard
 =========================== */

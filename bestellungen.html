@@ -6,50 +6,33 @@
   <title>Bestellungen verwalten</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
   <style>
+    /* Allgemeine Layout-Einstellungen */
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f4f7fa;
       margin: 0;
       padding: 0;
+      background-color: #f4f7fa;
     }
 
     header {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-    }
-
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
+      background: url('header.png') no-repeat center center;
+      background-size: cover;
+      height: 200px;
     }
 
     .container {
-      max-width: 1200px;
-      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
       padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    /* Formular für Bestellungen */
     .form-container {
-      margin-bottom: 20px;
+      width: 30%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .form-container label {
@@ -79,6 +62,15 @@
 
     .form-container button:hover {
       background-color: #45a049;
+    }
+
+    /* Tabelle */
+    .table-container {
+      width: 65%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     table {
@@ -111,19 +103,12 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bestellungen verwalten</h1>
-  </header>
+  <!-- Header -->
+  <header></header>
 
-  <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Bestellungen</a>
-    <a href="#">Produkte</a>
-    <a href="#">Buchhaltung</a>
-    <a href="#">Einstellungen</a>
-  </div>
-
+  <!-- Hauptbereich -->
   <div class="container">
+    <!-- Formularbereich (Bestellungen hinzufügen) -->
     <div class="form-container">
       <h2>Neue Bestellung Hinzufügen</h2>
       <form id="orderForm">
@@ -147,6 +132,7 @@
       </form>
     </div>
 
+    <!-- Tabellenbereich (Bestellungen auflisten) -->
     <div class="table-container">
       <h2>Alle Bestellungen</h2>
       <table id="ordersTable">
@@ -160,18 +146,19 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Dynamisch generierte Bestellungen werden hier eingefügt -->
+          <!-- Hier werden die Bestellungen dynamisch eingefügt -->
         </tbody>
       </table>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Dream-World. Alle Rechte vorbehalten.</p>
   </footer>
 
   <script>
-    // Beispiel-Daten, die nach dem Absenden des Formulars in die Tabelle eingefügt werden.
+    // Beispiel-Daten und Funktionen zum Hinzufügen und Löschen von Bestellungen
     const orders = [];
 
     document.getElementById('orderForm').addEventListener('submit', function(e) {
@@ -182,7 +169,7 @@
       const product = document.getElementById('product').value;
       const quantity = document.getElementById('quantity').value;
 
-      // Bestellinformationen speichern (normalerweise würde dies auch an eine Datenbank oder API gesendet werden)
+      // Bestellinformationen speichern (normalerweise wird dies an eine Datenbank gesendet)
       orders.push({ orderId, customerName, product, quantity });
 
       // Tabelle aktualisieren

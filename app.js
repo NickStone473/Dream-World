@@ -38,6 +38,27 @@ document.getElementById("add-product-form").addEventListener("submit", function(
     document.getElementById("add-product-form").reset();
 });
 
+    // Anfrage an das Google Apps Script senden
+    fetch("DEINE_WEB_APP_URL", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(product)  // Produktdaten als JSON übergeben
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Produkt erfolgreich hinzugefügt:', data);
+        loadProducts();  // Produkte neu laden, um die Tabelle zu aktualisieren
+    })
+    .catch((error) => {
+        console.error('Fehler beim Hinzufügen des Produkts:', error);
+    });
+
+    // Formular zurücksetzen
+    document.getElementById("add-product-form").reset();
+});
+
 // Produkte anzeigen
 function loadProducts() {
     const productList = document.getElementById("product-list").getElementsByTagName('tbody')[0];
@@ -65,3 +86,4 @@ function loadProducts() {
 
 // Beim Laden der Seite Produkte anzeigen
 window.onload = loadProducts;
+
